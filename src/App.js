@@ -50,7 +50,7 @@ function App() {
                 data.customers.map((customer, index) => (
                     <div key={index} className="card">
                         <LazyLoad height={200} once>
-                            <img src={person_url(index)}/>
+                            <img src={person_url(index)} alt={"test"}/>
                         </LazyLoad>
                         <div className="card-body">
                             <h3>{customer.company_name}</h3>
